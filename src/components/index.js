@@ -1,25 +1,6 @@
-import Sidebar from './Sidebar';
-import Searchbar from './Searchbar';
-import SongCard from './SongCard';
-import TopPlay from './TopPlay';
-import ArtistCard from './ArtistCard';
-import DetailsHeader from './DetailsHeader';
-import SongBar from './SongBar';
-import RelatedSongs from './RelatedSongs';
-import MusicPlayer from './MusicPlayer';
-import Loader from './Loader';
-import Error from './Error';
-
-export {
-  TopPlay,
-  Sidebar,
-  SongCard,
-  Searchbar,
-  ArtistCard,
-  DetailsHeader,
-  SongBar,
-  RelatedSongs,
-  MusicPlayer,
-  Loader,
-  Error,
-};
+export { default as Navbar } from './Navbar';
+export { default as Feed } from './Feed';
+export { default as ChannelDetail } from './ChannelDetail';
+export { default as SearchFeed } from './SearchFeed';
+export { default as VideoDetail } from './VideoDetail';
+export { default as SearchBar } from './SearchBar';
