@@ -1,7 +1,7 @@
-import { ChangeCircle, CheckCircle, VideoFileRounded } from "@mui/icons-material"
+import { CheckCircle } from "@mui/icons-material"
 import { Card, CardContent, CardMedia, Typography } from "@mui/material"
-import { Link, createMemoryRouter } from "react-router-dom"
-import { demoChannelTitle, demoChannelUrl, demoThumbnailUrl, demoVideoTitle, demoVideoUrl } from "../utils/constanst"
+import { Link } from "react-router-dom"
+import { demoChannelTitle, demoChannelUrl, demoVideoTitle, demoVideoUrl } from "../utils/constanst"
 
 
 const VideoCard = ({ video: { id: { videoId }, snippet } }) => {
@@ -11,11 +11,7 @@ const VideoCard = ({ video: { id: { videoId }, snippet } }) => {
                 <CardMedia
                     image={snippet?.thumbnails?.high?.url}
                     alt={snippet?.title}
-                    sx={{
-                        width: {
-                            xs: '100%', sm: '358px', md: '320px'
-                        }, height: 180
-                    }}
+                    sx={{ width: { xs: '100%', sm: '358px', md: '320px' }, height: 180 }}
                 />
             </Link>
             <CardContent sx={{ backgroundColor: '#1e1e1e', height: '106px' }} >
